@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.login-container{
+    margin-top: 130px;
+    margin-left: 740px;
+    display: flex;
+    width: 300px;
+    height: 370px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: #05042e;
+    border-radius: 10px;
+    border: 1px solid #2564de;
+}
+
+form{
+    width: 300px;
+    margin-top: 2rem;
+}
+
+.logo{
+    margin-top: -10px;
+    width: 120px;
+}
+
+.input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 40px ;
+    padding: 10px 0px;
+    border-bottom: 1px solid #cec4c4;
+}
+
+.input-div:after, .input-div:before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    transition: .3s;
+}
+
+.input-div.one {
+    margin-top: 15px;
+}
+
+.input-div.two{
+    margin-top: -50px;
+}
+
+.i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 17px;
+    left: 0;
+}
+
+.i img {
+    width: 14px;
+}
+
+.input-div > div{
+    position: relative;
+    height: 45px;
+}
+
+.input-div > div h5 {
+    position: absolute;
+    left: 7px;
+    top: 70%;
+    color: #e0d9d9;
+    font-size: 11px;
+    transition: .3s;
+}
+
+.input-div.focus div h5{
+    top: 35%
+}
+
+.input-div.focus:after, .input-div.focus:before{
+    width: 50%;
+}
+
+.input {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    left: 0;
+    top: 40%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: .8rem;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+#forgotPassword{
+    display: block;
+    text-align: right;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 100;
+    transform: .3s;
+    margin-top: -38px;
+    margin-right: 40px;
+}
+
+.btn {
+    display: block;
+    width: 30%;
+    height: 50%;
+    color: #fff;
+    border-radius: 25px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #2564de;
+    background-image: linear-gradient(to right, #0c04ae, #2564de);
+    background-size: 200%;
+    transform: .5s;
+}
+
+.signup {
+    font-size: 0.6rem;
+    padding-top: 30px;
+}
+
+.signup a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .login-container{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
+
+@media screen and (max-width: 1200px) and (min-width: 900px){
+    .login-container{
+        display: flex;
+        float: right;
+        padding: 0;
+        margin: 0;
+        margin-top: 130px;
+        margin-left: 500px;
+        transition: 1s;
+    }
+}
