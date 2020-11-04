@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #5c174e, #040073);
+}
+
+.navbar-brand{
+    padding-left: 1.5rem;
+    z-index: 1;
+}
+
+.btn-group{
+    padding-right: 1rem;
+}
+
+#content-image {
+    display: block;
+    margin: 6rem auto 0 auto;
+}
+
+.text a{
+    color: #2462d7;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.text p{
+    color: #4d4d4d;
+    font-size: 10px;
+}
+
+.loginbtn {
+    width: 6.5rem;
+    height: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1rem;
+    font-size: .65rem;
+    box-shadow: 0 0 10px #2564de;
+    background-image: linear-gradient(to right, #0c04ae, #2564de);
+}
